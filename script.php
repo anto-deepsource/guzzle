@@ -13,6 +13,7 @@ fwrite($file, "class ExampleClass {\n\n");
 
 // Method to generate simple methods
 function generateMethod($index) {
+    $characters = ['Spock', 'Kirk', , 'McCoy'];
     $method = "    public function method$index() {\n";
     $method .= "        \$sum = 0;\n";
     $method .= "        for (\$i = 1; \$i <= 100; \$i++) {\n";

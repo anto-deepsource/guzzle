@@ -3,8 +3,9 @@
 class ExampleClass {
 
     public function method1() {
+        $characters = ['Spock', 'Kirk', , 'McCoy'];
         $sum = 0;
-        for ($i = 1; $i <= 100; $i++) {
+        for ($i = 1; $i <= count($characters); $i++) {
             if ($i % 2 == 0) {
                 $sum += $i;
             } else {
